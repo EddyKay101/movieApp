@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    .list-group {
+        position:absolute;
+        z-index:1;
+        overflow-y: auto;
+        background: #f6f6f6;
+        width: 14%;
+    }
+    
+}
+
+
+@media (min-width: 1900px) {
+    .list-group {
+        position:absolute;
+        z-index:1;
+        overflow-y: auto;
+        background: #f6f6f6;
+        width: 14%;
+    }
+}
+
+.list-group-item {
+    text-decoration: none;
+    color: #343a40;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3a ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #343a40;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3a ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.list-group-item a:hover {
+    text-decoration: none;
+    color: grey;
+}
+

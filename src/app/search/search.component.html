@@ -1,0 +1,13 @@
+<form class="form-inline my-2 my-lg-0">
+    <input #searchBox id="search-box" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" (input)="search(searchBox.value)" (keydown)="openDropDown($event)">
+    
+  </form>
+
+  <ul class="list-group" *ngIf="showDropDown" (click)="closeDropDown()">
+      <li class="list-group-item" *ngFor="let movie of movies$ | async" >
+        <a (click)="closeDropDown()" routerLink="/detail/{{movie.id}}">
+          {{movie.title}}
+        </a>
+      </li>
+      
+    </ul>
